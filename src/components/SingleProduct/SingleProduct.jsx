@@ -42,7 +42,7 @@ const SingleProduct = () => {
             <div className="layout">
                 <div className="single-product-page">
                     <div className="left">
-                        <img src={import.meta.env.VITE_REACT_APP_DEV_URL + products?.img?.data[0]?.attributes?.url} alt="product" />
+                        <img src={process.env.VITE_REACT_APP_DEV_URL + products?.img?.data[0]?.attributes?.url} alt="product" />
                     </div>
                     <div className="right">
                         <span className="name">{products.title}</span>

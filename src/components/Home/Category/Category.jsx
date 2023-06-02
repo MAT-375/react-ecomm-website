@@ -12,7 +12,7 @@ const Category = ({ categories }) => {
             <div className="categories">
                 {categories?.data?.map((item) => (
                     <div key={item.id} className="category" onClick={() => navigate(`/category/${item.id}`)}>
-                        <img src={import.meta.env.VITE_REACT_APP_DEV_URL + item.attributes.img.data.attributes.url} alt="category" />
+                        <img src={process.env.VITE_REACT_APP_DEV_URL + item.attributes.img.data.attributes.url} alt="category" />
                     </div>
                 ))}
 
