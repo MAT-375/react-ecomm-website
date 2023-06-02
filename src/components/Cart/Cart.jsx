@@ -15,8 +15,8 @@ import { makePaymentRequest } from "../../utils/api";
 const Cart = ({ setShowCart }) => {
     const { cartItems, cartSubTotal } = useContext(Context);
 
-    // const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
-    // const stripePromise = loadStripe(`${process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY}`);
+    // const stripePromise = loadStripe(import.meta.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
+    // const stripePromise = loadStripe(`${import.meta.env.REACT_APP_STRIPE_PUBLISHABLE_KEY}`);
 
     // const handlePayment = async () => {
 
@@ -35,7 +35,7 @@ const Cart = ({ setShowCart }) => {
 
     // };
 
-    const stripePromise = loadStripe(`${process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY}`);
+    const stripePromise = loadStripe(`${import.meta.env.REACT_APP_STRIPE_PUBLISHABLE_KEY}`);
 
     const handlePayment = async () => {
         try {

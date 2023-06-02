@@ -39,7 +39,7 @@ const Search = ({ setShowSearch }) => {
                             setShowSearch(false);
                         }}>
                             <div className="img-container">
-                                <img src={process.env.VITE_REACT_APP_DEV_URL + item.attributes.img.data[0].attributes.url} alt="product" />
+                                <img src={import.meta.env.VITE_REACT_APP_DEV_URL + item.attributes.img.data[0].attributes.url} alt="product" />
                             </div>
                             <div className="prod-details">
                                 <span className="name">{item.attributes.title}</span>
