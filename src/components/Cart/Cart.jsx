@@ -35,7 +35,7 @@ const Cart = ({ setShowCart }) => {
 
     // };
 
-    const stripePromise = loadStripe(`${import.meta.env.REACT_APP_STRIPE_PUBLISHABLE_KEY}`);
+    const stripePromise = loadStripe(`${import.meta.env.VITE_REACT_APP_STRIPE_PUBLISHABLE_KEY}`);
 
     const handlePayment = async () => {
         try {
