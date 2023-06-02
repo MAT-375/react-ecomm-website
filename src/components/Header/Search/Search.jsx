@@ -5,8 +5,6 @@ import { useNavigate } from "react-router-dom";
 import useFetch from "../../../hooks/useFetch";
 
 
-
-// eslint-disable-next-line react/prop-types
 const Search = ({ setShowSearch }) => {
     const [query, setQuery] = useState("")
     const navigate = useNavigate();

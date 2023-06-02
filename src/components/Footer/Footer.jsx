@@ -1,4 +1,4 @@
-// import React from "react";
+
 import "./Footer.scss";
 
 import { FaLocationArrow, FaMobileAlt, FaEnvelope } from "react-icons/fa";

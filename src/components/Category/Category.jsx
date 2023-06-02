@@ -18,5 +18,3 @@ const Category = () => {
 };
 
 export default Category;
-
-// data?.data?.[0]?.attributes?.categories?.data?.[0]?.attributes?.title

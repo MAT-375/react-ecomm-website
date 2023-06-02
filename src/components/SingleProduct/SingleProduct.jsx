@@ -42,7 +42,7 @@ const SingleProduct = () => {
             <div className="layout">
                 <div className="single-product-page">
                     <div className="left">
-                        <img src={import.meta.env.VITE_REACT_APP_DEV_URL + products.img.data[0].attributes.url} alt="product" />
+                        <img src={import.meta.env.VITE_REACT_APP_DEV_URL + products?.img?.data[0]?.attributes?.url} alt="product" />
                     </div>
                     <div className="right">
                         <span className="name">{products.title}</span>
@@ -56,7 +56,7 @@ const SingleProduct = () => {
                                 <span onClick={increment}>+</span>
                             </div>
                             <button className="add-to-cart-button" onClick={() => {
-                                handleAddToCart(data.data[0], quantity)
+                                handleAddToCart(data?.data[0], quantity)
                             }}>
                                 <FaCartPlus />
                                 ADD TO CART
@@ -67,7 +67,7 @@ const SingleProduct = () => {
                         <div className="info-item">
                             <span className="text-bold">
                                 Category:&nbsp;
-                                <span>{products.categories.data[0].attributes.title}</span>
+                                <span>{products?.categories?.data[0]?.attributes?.title}</span>
                             </span>
                             <span className="text-bold">
 
@@ -82,7 +82,7 @@ const SingleProduct = () => {
                         </div>
                     </div>
                 </div>
-                <RelatedProducts productId={id} categoryId={products.categories.data[0].id} />
+                <RelatedProducts productId={id} categoryId={products?.categories?.data[0]?.id} />
             </div>
         </div>
     );

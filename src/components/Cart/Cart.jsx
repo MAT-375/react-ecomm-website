@@ -1,3 +1,4 @@
+
 import "./Cart.scss";
 import { MdClose } from "react-icons/md";
 import { BsCartX } from "react-icons/bs";
@@ -10,7 +11,7 @@ import { makePaymentRequest } from "../../utils/api";
 
 
 
-// eslint-disable-next-line react/prop-types
+
 const Cart = ({ setShowCart }) => {
     const { cartItems, cartSubTotal } = useContext(Context);
 

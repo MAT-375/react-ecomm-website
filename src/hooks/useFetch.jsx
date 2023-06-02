@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { fetchDataFromApi } from "../utils/api";
 
@@ -8,7 +9,7 @@ const useFetch = (endpoint) => {
 
     useEffect(() => {
         makeApiCall();
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, [endpoint]);
 
 
